@@ -35,6 +35,7 @@ ExternalProject_Add(cranfield
   INSTALL_COMMAND "")
 
 # Ignore sign warnings when expanding bandit's macros.
+message("BANDIT_SOURCE_FILES: " ${BANDIT_SOURCE_FILES}) #none, we're in the test dir, so this finds all the .cpp files
 file(GLOB BANDIT_SOURCE_FILES *.cpp)
 if (CMAKE_CXX_COMPILER_ID MATCHES "Clang"
     OR CMAKE_CXX_COMPILER_ID MATCHES "GNU")
@@ -42,6 +43,7 @@ if (CMAKE_CXX_COMPILER_ID MATCHES "Clang"
       " -Wno-sign-conversion -Wno-conversion")
 endif()
 add_executable(unit-test ${BANDIT_SOURCE_FILES})
+message("BANDIT_SOURCE_FILES: " ${BANDIT_SOURCE_FILES}) #lots of paths
 add_dependencies(unit-test ceeaus breast-cancer)
 target_include_directories(unit-test PUBLIC ${meta_SOURCE_DIR}/../deps/bandit/)
 target_link_libraries(unit-test meta-index
