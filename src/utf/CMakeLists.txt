@@ -2,6 +2,7 @@ project(meta-utf)
 
 add_subdirectory(tools)
 
+message("META_STATIC_UTF: " ${META_STATIC_UTF}) #none
 if (META_STATIC_UTF)
   add_library(meta-utf STATIC segmenter.cpp transformer.cpp utf.cpp)
 else()

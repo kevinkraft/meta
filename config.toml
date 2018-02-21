@@ -50,7 +50,7 @@ topics = 4
 model-prefix = "lda-model"
 
 [crf]
-prefix = "crf"
+prefix = "D:/Programs/meta-toolkit/models/crf/crf/"
 treebank = "penn-treebank" # relative to data prefix
 corpus = "wsj"
 section-size = 99
@@ -77,7 +77,7 @@ prefix = "features"
 features-per-class = 20
 
 [sequence]
-prefix = "perceptron-tagger"
+prefix = "D:/Programs/meta-toolkit/models/greedy-perceptron-tagger/"
 treebank = "penn-treebank" # relative to data prefix
 corpus = "wsj"
 section-size = 99
@@ -86,7 +86,7 @@ dev-sections = [19, 21]
 test-sections = [22, 24]
 
 [parser]
-prefix = "parser"
+prefix = "D:/Programs/meta-toolkit/models/greedy-constituency-parser/"
 treebank = "penn-treebank" # relative to data prefix
 corpus = "wsj"
 section-size = 99

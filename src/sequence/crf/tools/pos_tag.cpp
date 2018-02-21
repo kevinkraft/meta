@@ -17,6 +17,8 @@ using namespace meta;
 
 int main(int argc, char* argv[])
 {
+	std::cout << "Running . . ." << std::endl;
+	//system("pause");
     if (argc != 2)
     {
         std::cerr << "Usage:\t" << argv[0] << " configFile" << std::endl;
