@@ -102,16 +102,16 @@
           "value": "Release"
         },
         {
-          "name": "ICU_ROOT",
-          "value": "D:\\Programs\\meta-toolkit\\deps\\icu-60.2"
+          "name": "ICU_ROOT:PATH",
+          "value": "D:/Programs/meta-toolkit/deps/icu-60.2"
         },
         {
           "name": "CMAKE_VERBOSE_MAKEFILE:BOOL",
           "value": "ON"
         },
         {
-          "name": "META_STATIC_UTF",
-          "value": "On"
+          "name": "META_STATIC_UTF:BOOL",
+          "value": "ON"
         }
       ]
     },

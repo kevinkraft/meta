@@ -43,3 +43,7 @@ When building the shared libraries, it doesnt make the .lib files if BUILD_SHARE
 So run with it set to OFF, then run again with it ON, and the .libs shouldbe picked up.
 BUILD_STATIC_ICU must remain off as it gives an error about not compiling ICU on windows.
 I downloaded the binaries and it seem able t ofind them, so I don't think it matters.
+
+Also had to download cpptoml from:
+
+	https://github.com/skystrife/cpptoml
