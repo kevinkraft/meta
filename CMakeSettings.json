@@ -144,7 +144,7 @@
         },
         {
           "name": "BUILD_STATIC_ICU:BOOL",
-          "value": "OFF"
+          "value": "ON"
         },
         {
           "name": "META_STATIC_UTF",
