@@ -4,7 +4,7 @@
  */
 
 #include "meta/analyzers/tokenizers/icu_tokenizer.h"
-#include "meta/classify/confusion_matrix.h"
+//#include "meta/classify/confusion_matrix.h"
 #include "cpptoml.h"
 #include "meta/logging/logger.h"
 #include "meta/sequence/crf/crf.h"

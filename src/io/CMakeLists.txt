@@ -11,6 +11,7 @@ if (META_HAS_LIBLZMA)
     list(APPEND META_IO_SOURCES xzstream.cpp)
 endif()
 
+message("ZLIB_LIBRARIES: " ${ZLIB_LIBRARIES})
 add_library(meta-io ${META_IO_SOURCES})
 target_link_libraries(meta-io meta-util ${ZLIB_LIBRARIES})
 
@@ -19,6 +20,7 @@ if (WIN32)
     target_link_libraries(meta-io meta-mman-win32)
 endif()
 
+message("STD_EXPERIMENTAL_FILESYSTEM_LIBRARIES: " ${STD_EXPERIMENTAL_FILESYSTEM_LIBRARIES})
 if (META_HAS_EXPERIMENTAL_FILESYSTEM)
     target_link_libraries(meta-io ${STD_EXPERIMENTAL_FILESYSTEM_LIBRARIES})
 else()

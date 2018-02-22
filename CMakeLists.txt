@@ -80,6 +80,7 @@ if(UNIX OR MINGW)
   endif()
 endif()
 
+message("ZLIB_INCLUDE_DIRS: " ${ZLIB_INCLUDE_DIRS})
 target_include_directories(meta-definitions SYSTEM INTERFACE ${ZLIB_INCLUDE_DIRS})
 
 if (META_HAS_LIBLZMA)
@@ -157,7 +158,6 @@ if(DOXYGEN_FOUND AND NOT TARGET doc)
 endif()
 
 add_subdirectory(src)
-add_subdirectory(tests)
 add_subdirectory(deps/cpptoml EXCLUDE_FROM_ALL)
 
 # Warn users that are using a 32-bit system
