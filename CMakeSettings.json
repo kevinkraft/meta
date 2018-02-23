@@ -149,6 +149,10 @@
         {
           "name": "META_STATIC_UTF",
           "value": "ON"
+        },
+        {
+          "name": "META_STATIC_UTIL",
+          "value": "ON"
         }
       ]
     }

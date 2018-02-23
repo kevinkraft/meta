@@ -1,7 +1,6 @@
 project(meta-util)
 
 add_library(meta-util progress.cpp)
-message("CMAKE_THREAD_LIBS_INIT: " ${CMAKE_THREAD_LIBS_INIT})
 target_link_libraries(meta-util meta-definitions ${CMAKE_THREAD_LIBS_INIT})
 
 install(TARGETS meta-util
