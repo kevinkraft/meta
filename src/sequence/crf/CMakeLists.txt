@@ -5,7 +5,8 @@ add_subdirectory(tools)
 add_library(meta-crf crf.cpp
                      scorer.cpp
                      tagger.cpp
-                     viterbi_scorer.cpp)
+                     viterbi_scorer.cpp
+					 lib_wrapper.cpp)
 target_link_libraries(meta-crf meta-sequence)
 
 install(TARGETS meta-crf
